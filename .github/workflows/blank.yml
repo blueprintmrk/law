@@ -32,6 +32,19 @@ jobs:
         echo Add other actions to build,
         echo test, and deploy your project.
         
+        - name: First interaction
+  uses: actions/first-interaction@v1.0.0
+  with:
+    # Token for the repo. Can be passed in using {{ secrets.GITHUB_TOKEN }}
+    repo-token: 
+    # Comment to post on an individuals first issue
+    issue-message: # optional
+    # Comment to post on an individuals first pull request
+    pr-message: # optional
+       
+       - name: rsync deployments
+  uses: contention/rsync-deployments@v1.0.0
+
         
         - name: rsync deployments
   uses: contention/rsync-deployments@v1.0.0
