@@ -42,9 +42,6 @@ jobs:
     # Comment to post on an individuals first pull request
     pr-message: # optional
        
-       - name: rsync deployments
-  uses: contention/rsync-deployments@v1.0.0
-
         
         - name: rsync deployments
   uses: contention/rsync-deployments@v1.0.0
